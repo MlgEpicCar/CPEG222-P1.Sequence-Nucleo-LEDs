@@ -36,8 +36,8 @@ void SysTick_Handler(void) {
         if (button_debounce == 0)
         {
             button_pressed = true;
-            /* 200 ms debounce/cooldown */
-            button_debounce = 200;
+            /* 67 ms debounce/cooldown */
+            button_debounce = 67;
         }
     }
 
@@ -45,6 +45,12 @@ void SysTick_Handler(void) {
     if (button_debounce > 0)
     {
         button_debounce--;
+    }
+
+    /* Prevent holding from constantly switching colors */
+    while (BUTTON_PORT->IDR & (1U << BUTTON_PIN))
+    {
+        // Do nothing
     }
 }
 
