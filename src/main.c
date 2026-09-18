@@ -2,7 +2,7 @@
 * Author: Carlos Munar (MlgEpicCar)
 * CPEG222 Project 1: Sequence Nucleo LEDs, 9/17/26
 * 
-* This program turns on LEDs in an Red -> Blue -> Green -> Red -> ... order. 
+* This program turns on LEDs in an Red -> Green -> Blue -> Red -> ... order. 
 * The switches occur when the user presses the blue button. When reset (black button)
 * is pressed the program will return to the Red LED being on.
 *
