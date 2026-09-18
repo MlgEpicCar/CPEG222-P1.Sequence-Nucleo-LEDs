@@ -102,7 +102,7 @@ int main(void)
     SysTick_Config(SystemCoreClock / 1000);
 
     /*List of LED addresses to sift through*/
-    const uint8_t leds[] = { RED_LED_PIN, BLUE_LED_PIN, GREEN_LED_PIN };
+    const uint8_t leds[] = { RED_LED_PIN, GREEN_LED_PIN, BLUE_LED_PIN };
 
     /* Always start with Red LED*/
     int current_led = 0;
